@@ -1,0 +1,20 @@
+body {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.scene {
+    width: 214px;
+    height: 316px;
+}
+
+#robot {
+    width: 214px;
+    height: 316px;
+    background-size: cover;
+    image-rendering: pixelated;
+}
