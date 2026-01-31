@@ -3,15 +3,52 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Robot Sprite Animation</title>
+    <title>Robot RPA – App Web</title>
+
+    <!-- CSS principal -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
 
-<div class="scene">
-    <div id="robot"></div>
-</div>
+  <!-- ===============================
+       BACKGROUND / CAPAS
+  ================================ -->
+  <div class="app-background">
 
-<script src="{% static 'js/script.js' %}"></script>
+    <!-- 🔵 Glow base RPA -->
+    <div class="rpa-glow"></div>
+
+    <!-- ✨ Partículas (Canvas) -->
+    <canvas id="particles"></canvas>
+
+    <!-- 🌊 Parallax automático -->
+    <div class="parallax-layer"></div>
+
+    <!-- 🧩 Grid futurista -->
+    <div class="grid-layer"></div>
+
+    <!-- ===============================
+         CONTENIDO PRINCIPAL
+    ================================ -->
+    <div class="scene-content">
+
+      <!-- 🤖 Robot + estados -->
+      <div class="robot-wrapper bot-idle" id="robotState">
+
+        <!-- Sprite del robot -->
+        <div id="robot"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ===============================
+       SCRIPTS
+  ================================ -->
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="{% static 'js/particles.js' %}"></script>
+
 </body>
 </html>
